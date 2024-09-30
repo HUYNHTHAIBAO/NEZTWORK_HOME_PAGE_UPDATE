@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'VNM Sans Std';
+    src: url('VNMSansStd-Regular.eot');
+    src: url('VNMSansStd-Regular.eot?#iefix') format('embedded-opentype'),
+        url('VNMSansStd-Regular.woff2') format('woff2'),
+        url('VNMSansStd-Regular.woff') format('woff'),
+        url('VNMSansStd-Regular.ttf') format('truetype'),
+        url('VNMSansStd-Regular.svg#VNMSansStd-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
