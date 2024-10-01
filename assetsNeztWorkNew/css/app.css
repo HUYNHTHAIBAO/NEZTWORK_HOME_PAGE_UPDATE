@@ -1552,7 +1552,9 @@ html, body {
     font-weight: 400;
     color : #FFFFFF;
     font-family: "VNM Sans Std", sans-serif;
-    padding-top : 5.5rem
+    padding-top : 5.5rem;
+    padding-left: 2rem;
+    padding-right : 2rem;
 }
 
 .tool_item_group {
