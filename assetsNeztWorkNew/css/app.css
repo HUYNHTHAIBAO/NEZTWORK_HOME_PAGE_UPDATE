@@ -532,7 +532,7 @@ html, body {
 /* // login */
 .login_wrapper {
     background: linear-gradient(to bottom, rgba(255, 226, 210, 1), #ffffff) !important;
-    padding-top : 100px;
+    padding-top : 140px;
   }
 .login-img {
     width: 100%;
