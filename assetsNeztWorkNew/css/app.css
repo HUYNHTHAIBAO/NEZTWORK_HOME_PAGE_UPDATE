@@ -525,9 +525,98 @@ html, body {
     align-items: center;
     justify-content : center;
 }
+
+
+
+/* //login */
+/* // login */
+.login_wrapper {
+    background: linear-gradient(to bottom, rgba(255, 226, 210, 1), #ffffff) !important;
+    padding-top : 100px;
+  }
+.login-img {
+    width: 100%;
+}
+  .login_text {
+    font-size: 1.6rem;
+    font-family: "Be Vietnam Pro 2022", sans-serif;
+}
+.login {
+    padding : 0rem 2rem;
+}
+.login_input {
+    padding: 1.5rem; /* Khoảng cách bên trong trường nhập liệu */
+    width: 100%; /* Đảm bảo chiều rộng của trường chiếm toàn bộ không gian */
+    font-size: 1.6rem; /* Kích thước chữ trong trường nhập liệu */
+    border-radius: 2rem; /* Bo góc cho các trường nhập liệu */
+    border: 1px solid rgba(255, 226, 210, 1); /* Viền với màu chính */
+    transition: all 0.3s linear; /* Thêm hiệu ứng chuyển đổi cho viền */
+    font-family: "Be Vietnam Pro 2022", sans-serif;
+    color : var(--main-color);
+}
+
+
+
+
+
+.login_input::placeholder {
+    color: var(--main-color); /* Màu sắc cho placeholder */
+    opacity: 1; /* Đảm bảo placeholder không bị mờ */
+}
+
+.form_auth--btn {
+    font-size: 1.6rem; /* Kích thước chữ trong trường nhập liệu */
+    padding: 1rem 1.5rem;  
+    border-radius: 2rem;  
+    border: none;  
+    color : var(--main-color);  
+    background-color: rgba(255, 226, 210, 0.5);  
+    border : 1px solid var(--main-color);
+    transition: all 0.2s linear;
+    width: 100%;
+}
+.form_auth--btn:hover {
+    background-color: var(--main-color);
+    color: #fff;
+    border : 1px solid var(--main-color);
+}
+
+.form_auth--btn {
+    margin-top: 2rem;
+    font-family: "Be Vietnam Pro 2022", sans-serif;
+}
+                                            
+.login_input:focus {
+    border: 1px solid var(--main-color); /* Viền khi trường được chọn */
+    outline: none; /* Xóa viền mặc định của trình duyệt */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); Thêm bóng nhẹ khi chọn trường
+}
+
+.btn {
+    font-size: 1.6rem; /* Đảm bảo nút dễ đọc */
+    padding: 1rem 2rem; /* Tạo khoảng cách cho nút */
+}
+
+.login_title {
+    font-size: 5.5rem;
+    text-align: center;
+    font-weight : 500;
+        font-family: "VNM Sans Std", sans-serif;
+        margin-bottom: 2rem;
+}
+.login_desc {
+    margin-top : 2rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-family: "Be Vietnam Pro 2022", sans-serif;
+}
+/* // */
 .warpper {
     background: linear-gradient(to bottom, #ffffff, #ffffff);
 }
+
+
+
 .warpper_content {
     position: relative;     
 
@@ -535,6 +624,7 @@ html, body {
 .header_wrapper {
     min-height: 100vh; /* Chiều cao tối thiểu */
     background: linear-gradient(to bottom, rgba(255, 226, 210, 1), #ffffff) !important;
+    /* background: linear-gradient(to bottom, rgba(255, 226, 210, 1) 0%, rgba(255, 226, 210, 1) 50%, rgba(255, 255, 255, 0) 100%) !important; */
 }
 .header {
     font-family: "Plus Jakarta Sans", sans-serif;
@@ -2144,10 +2234,10 @@ html, body {
   } 
   @media screen and (max-width: 1366px) { 
         .banner_image_left--img {
-            width : 350px;    
+            width : 320px;    
         }
         .banner_image_right--img {
-            width : 350px;    
+            width : 320px;    
         }
         .event_wrapper {
             margin-left : 2rem;
@@ -2173,10 +2263,10 @@ html, body {
   }
   @media screen and (max-width: 1200px) {  
     .banner_image_left--img {
-        width : 300px;    
+        width : 280px;    
     }
     .banner_image_right--img {
-        width : 300px;  
+        width : 280px;  
           
     }
     .event_slider .slick-prev {
@@ -2292,7 +2382,9 @@ html, body {
         padding: 5.2rem 2rem 7rem 2rem;
     }
    
-
+.login_title {
+    font-size: 4.5rem;
+}
 }
 @media screen and (max-width: 768px) { 
  
@@ -2476,7 +2568,9 @@ html, body {
       .partner_title {
         font-size : 4rem;
       }
-    
+    .login_title {  
+        font-size: 3.2rem;         
+    }
 }
 @keyframes slideLeft {
     to {
@@ -2613,8 +2707,11 @@ html, body {
         margin-bottom: 12rem;
       }
       .tools_bg_top_left img {
-            height : 180px;
-      }
+        height: 140px;
+        width: 100%; /* Đảm bảo hình ảnh chiếm toàn bộ chiều rộng */
+        object-fit: cover; /* Hoặc sử dụng `contain` nếu bạn muốn giữ tỷ lệ khung */
+    }
+    
       .tools_title {
         padding-top : 10rem;
       }
