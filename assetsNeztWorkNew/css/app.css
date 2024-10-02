@@ -2709,9 +2709,9 @@ html, body {
         margin-bottom: 12rem;
       }
       .tools_bg_top_left img {
-        height: 140px;
-        width: 100%; /* Đảm bảo hình ảnh chiếm toàn bộ chiều rộng */
-        object-fit: cover; /* Hoặc sử dụng `contain` nếu bạn muốn giữ tỷ lệ khung */
+        /* height: 140px; */
+        width: 70%; /* Đảm bảo hình ảnh chiếm toàn bộ chiều rộng */
+        object-fit: contain; /* Hoặc sử dụng `contain` nếu bạn muốn giữ tỷ lệ khung */
     }
     
       .tools_title {
