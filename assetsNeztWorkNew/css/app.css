@@ -818,11 +818,24 @@ html, body {
 }
 
 /* // event */
+.linear_bg {
+    position: relative;
+}
+.linear_bg_top {
+    position: absolute;
+    top: 2%;
+    left : 0;
+    width : 100%;
+    height : 100px;
+    background:  rgb(255 226 210 / 43%);
+    box-shadow: 1px 0px 40px 40px rgb(255 226 210 / 43%)
+}
+
 .event_wrapper {
     margin-top : 6rem;
-    /* margin-left : 170px; */
-    /* margin-left : 200px; */
+
     padding : 2rem;
+
 }
 
 /* .event {
@@ -838,6 +851,8 @@ html, body {
     color: #45403F;
     font-family: "VNM Sans Std", sans-serif;
     text-align: center;
+    position: sticky;
+    z-index: 1;
 }
 .event_slider {
     margin-top : 2.5rem;
@@ -1021,6 +1036,8 @@ html, body {
     font-weight: 400;
     color : #45403F;
     font-family: "VNM Sans Std", sans-serif;
+    position: sticky;
+    z-index: 1;
 }
 .creator_list {
     margin-top : 3.7rem;
@@ -1299,6 +1316,8 @@ html, body {
     font-weight: 400;
     color : #45403F;
     font-family: "VNM Sans Std", sans-serif;
+    position: sticky;
+    z-index : 1;
 }
 .category_list {
     margin-top : 6.4rem;
@@ -1399,12 +1418,17 @@ html, body {
     font-weight: 400;
     color : #45403F;
     font-family: "VNM Sans Std", sans-serif;
-    margin-top : 4rem
+    margin-top : 4rem;
+    position: sticky;
+    z-index : 1;
 }
 
 .topic_list {
     margin-top : 4rem;
-    
+    padding : 0rem 2rem;
+}
+.topic_list_two  {
+    padding : 0rem 2rem;
 }
 .topic_item {
     background-color : #C2C9F0;
@@ -1648,7 +1672,7 @@ html, body {
 }
 .tools_bg_top_left img {
     width: 100%;
-    height: 220px;
+    height: 250px;
     object-fit: cover;
 }
 .tools_bg_center_right {
@@ -1659,7 +1683,7 @@ html, body {
 }
 .tools_bg_center_right img{ 
     width: 100%;
-    height: 220px;
+    height: 250px;
     object-fit: cover;
 }
 .tools_bg_center_left {
@@ -1694,6 +1718,8 @@ html, body {
     font-family: "VNM Sans Std", sans-serif;
     /* padding-top : 5.5rem */
     margin-top : 6rem !important;
+    position: sticky;
+    z-index : 1;
 
 }
 .review_list {
@@ -1745,6 +1771,8 @@ html, body {
     color : #45403F;
     font-family: "VNM Sans Std", sans-serif;
     /* padding-top : 5.5rem */
+    position: sticky;
+    z-index : 1;
 }
 .news_list {
     display: flex;
@@ -1843,6 +1871,8 @@ html, body {
     font-weight: 400;
     color : #45403F;
     font-family: "VNM Sans Std", sans-serif;
+    position: sticky;
+    z-index : 1;
 }
 .partner_item--image {
     width : 14rem;
@@ -2236,10 +2266,10 @@ html, body {
   } 
   @media screen and (max-width: 1366px) { 
         .banner_image_left--img {
-            width : 320px;    
+            width : 300px;    
         }
         .banner_image_right--img {
-            width : 320px;    
+            width : 300px;    
         }
         .event_wrapper {
             margin-left : 2rem;
