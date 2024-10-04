@@ -530,12 +530,55 @@ html, body {
 
 /* //login */
 /* // login */
+.login_api_item {
+    width: 60px;
+    height : 60px;
+  }
+.login_api_item--img {
+    width: 100%;
+    height : 100%;
+    object-fit : cover;
+}
+.login_api_item {
+    padding : 1rem ;
+     border: 1px solid #ccc;
+     background-color : #fff;
+     margin: 0rem 1rem;
+     border-radius : 1rem;
+     transition : all 0.2s linear;
+    }
+    .login_api_item:hover  {
+        border: 1px solid var(--main-color);
+    }
+    .login_api_list--text {
+        font-size : 1.8rem;
+        text-align: center;
+        margin : 2rem 0rem 1rem 0rem;
+        font-style: italic;
+        font-wight : 400;
+        font-family: "Be Vietnam Pro 2022", sans-serif;
+        padding: 2rem 0rem;
+    }
+    .login_api_list_wrapper {
+        position: relative;
+    }
+    .login_api_line {
+        position: absolute;
+        top : 0;
+        left : 46%;
+        background-color : var(--main-color);
+        width : 5rem;
+        height : 5px;
+        transform : translate(0%, 0%);
+    }
 .login_wrapper {
     background: linear-gradient(to bottom, rgba(255, 226, 210, 1), #ffffff) !important;
     padding-top : 140px;
   }
 .login-img {
     width: 100%;
+    height: 350px;
+    object-fit: contain;
 }
   .login_text {
     font-size: 1.6rem;
@@ -605,7 +648,7 @@ html, body {
         margin-bottom: 2rem;
 }
 .login_desc {
-    margin-top : 2rem;
+    margin-top : 3rem;
     font-size: 1.8rem;
     font-weight: 400;
     font-family: "Be Vietnam Pro 2022", sans-serif;
@@ -1122,7 +1165,7 @@ html, body {
   
 
 .creator_item_second {
-    height : 347px;
+    /* height : 347px; */
     background: #FCC5C2;
     border-radius: 5rem;
     position: relative;
@@ -2292,6 +2335,11 @@ html, body {
           .tools_list  {
             padding : 0rem 6rem;
           }
+          .creator_item_outstanding {
+            height: 650px;
+        
+          }
+        
   }
   @media screen and (max-width: 1200px) {  
     .banner_image_left--img {
@@ -2417,6 +2465,19 @@ html, body {
 .login_title {
     font-size: 4.5rem;
 }
+.footer_submit_bg_right {
+    display : none;
+  }
+  .footer_submit_bg_right--mobile {
+        display : block;
+  }
+ 
+  .footer_submit_bg_right--mobile {
+    margin-top: 5.7rem;
+  }
+  .footer_submit {
+    padding: 7rem 6rem 0rem 6rem;
+  }
 }
 @media screen and (max-width: 768px) { 
  
@@ -2585,18 +2646,8 @@ html, body {
       .footer_submit_bg_left {
         display: none;
       }
-      .footer_submit_bg_right {
-        display : none;
-      }
-      .footer_submit_bg_right--mobile {
-            display : block;
-      }
-      .footer_submit {
-        padding: 7rem 6rem 0rem 6rem;
-      }
-      .footer_submit_bg_right--mobile {
-        margin-top: 5.7rem;
-      }
+     
+    
       .partner_title {
         font-size : 4rem;
       }
