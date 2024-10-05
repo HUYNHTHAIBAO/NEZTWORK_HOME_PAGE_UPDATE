@@ -230,7 +230,146 @@
           
 
 
+          $(document).ready(function () {
+            $(".creator_page_content_video_slide").slick({
+                slidesToShow: 2, // Hiển thị 2 cột
+                slidesToScroll: 1,
+                arrows: true,  
+                draggable: true,  
+                prevArrow: `<button type='button' class='slick-prev slick-arrow'><i class="fa-solid fa-chevron-left icon_slider_creator"></i></button>`,
+                nextArrow: `<button type='button' class='slick-next slick-arrow'><i class="fa-solid fa-chevron-right icon_slider_creator"></i></button>`,
+                dots: false,
+                infinite: true,
+                speed: 300,
+                centerMode: false,
+                rows: 1, // Hiển thị 2 hàng
+                variableWidth: true,  // Cho phép chiều rộng linh hoạt để che khuất một phần hàng
+                responsive: [
+             
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 1,
+                   
+                        },
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            arrows: true,
+                            variableWidth: false,  // Cho phép chiều rộng linh hoạt để che khuất một phần hàng
+                        },
+                    },
+                ],
+            });
+        });
 
+
+        $(document).ready(function () {
+          $(".creator_page_content_blogs_slide").slick({
+              slidesToShow: 2, // Hiển thị 2 cột
+              slidesToScroll: 1,
+              arrows: true,  
+              draggable: true,  
+              prevArrow: `<button type='button' class='slick-prev slick-arrow'><i class="fa-solid fa-chevron-left icon_slider_creator"></i></button>`,
+              nextArrow: `<button type='button' class='slick-next slick-arrow'><i class="fa-solid fa-chevron-right icon_slider_creator"></i></button>`,
+              dots: false,
+              infinite: true,
+              speed: 300,
+              centerMode: false,
+              rows: 1, // Hiển thị 2 hàng
+              variableWidth: true,  // Cho phép chiều rộng linh hoạt để che khuất một phần hàng
+              responsive: [
+           
+                  {
+                      breakpoint: 1024,
+                      settings: {
+                          slidesToShow: 1,
+                 
+                      },
+                  },
+                  {
+                      breakpoint: 480,
+                      settings: {
+                        slidesToShow: 1,
+                        arrows: true,
+                        variableWidth: false,  // Cho phép chiều rộng linh hoạt để che khuất một phần hàng
+                      },
+                  },
+              ],
+          });
+      });
+
+
+      $(document).ready(function () {
+        $(".creator_page_content_review_slide").slick({
+            slidesToShow: 2, // Hiển thị 2 cột
+            slidesToScroll: 1,
+            arrows: true,  
+            draggable: true,  
+            prevArrow: `<button type='button' class='slick-prev slick-arrow'><i class="fa-solid fa-chevron-left icon_slider_creator"></i></button>`,
+            nextArrow: `<button type='button' class='slick-next slick-arrow'><i class="fa-solid fa-chevron-right icon_slider_creator"></i></button>`,
+            dots: false,
+            infinite: true,
+            speed: 300,
+            centerMode: false,
+            rows: 1, // Hiển thị 2 hàng
+            variableWidth: true,  // Cho phép chiều rộng linh hoạt để che khuất một phần hàng
+            responsive: [
+         
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 1,
+               
+                    },
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                      slidesToShow: 1,
+                      arrows: true,
+                      variableWidth: false,  // Cho phép chiều rộng linh hoạt để che khuất một phần hàng
+                    },
+                },
+            ],
+        });
+    });
+
+    $(document).ready(function () {
+      $(".creator_page_content_similar_slide").slick({
+          slidesToShow: 2, // Hiển thị 2 cột
+          slidesToScroll: 1,
+          arrows: true,  
+          draggable: true,  
+          prevArrow: `<button type='button' class='slick-prev slick-arrow'><i class="fa-solid fa-chevron-left icon_slider_creator"></i></button>`,
+          nextArrow: `<button type='button' class='slick-next slick-arrow'><i class="fa-solid fa-chevron-right icon_slider_creator"></i></button>`,
+          dots: false,
+          infinite: true,
+          speed: 300,
+          centerMode: false,
+          rows: 1, // Hiển thị 2 hàng
+          variableWidth: true,  // Cho phép chiều rộng linh hoạt để che khuất một phần hàng
+          responsive: [
+       
+              {
+                  breakpoint: 1024,
+                  settings: {
+                      slidesToShow: 1,
+             
+                  },
+              },
+              {
+                  breakpoint: 480,
+                  settings: {
+                      slidesToShow: 1,
+                      arrows: false,
+                  },
+              },
+          ],
+      });
+  });
 
         const input = document.getElementById('searchInput');
         const placeholderText = "Tìm creator..."; // Text bạn muốn chạy
