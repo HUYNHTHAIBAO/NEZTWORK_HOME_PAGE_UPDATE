@@ -3177,6 +3177,690 @@ html, body {
 .creator_page_content_header--mobile{
     display: none;
 }
+
+/* // page booking */
+.booking_page_warpper {
+    background-color : #f7f7f7;
+}
+.booking_page_form {
+    background-color : #fff;
+    padding : 4.8rem 8rem;
+    border-radius : 2rem;
+    box-shadow: 0px 0px 20px 7px #13094a14;
+    
+}
+.booking_page {
+    padding: 12rem 2rem 7rem 2rem;
+ 
+}
+
+.booking_page_form--title {
+    font-size : 3.2rem;
+    font-weight : 700;  
+    font-family: "Be Vietnam Pro 2022", sans-serif;  
+    color : #45403F;
+}
+.booking_page_form_back--text{
+    font-size : 2rem;
+    font-weight : 400;  
+    font-family: "Be Vietnam Pro 2022", sans-serif;  
+    color : #45403F;
+    padding : 1rem 0rem;
+    display: inline-block;
+    transition: all 0.2s linear;
+}
+.booking_page_form_back--text:hover {
+    color : var(--main-color);
+}
+.booking_page_form_item_about_header--image {
+    width : 100px;
+    height : auto;
+}
+.booking_page_form_item_about_header--img {
+    width : 100%;
+    height : 100%;
+    object-fit: cover;
+    border-radius: 50%;
+
+}
+.booking_page_form_list {
+    margin-top : 4rem;
+}
+.booking_page_form_item_about_header--name {
+    font-size : 2rem;
+    font-weight : 600;  
+    font-family: "Be Vietnam Pro 2022", sans-serif;  
+    color : #45403F;
+    margin-top : 1.7rem;
+    margin-bottom: 0rem;
+}
+.booking_page_form_item_about_header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #eeeeee;
+    padding: 2rem;
+    border-radius : 2rem 2rem 0rem 0rem;
+}
+.booking_page_form_item_about_content {
+    border-left : 1px solid #eeeeee;
+    border-right : 1px solid #eeeeee;
+    border-bottom : 1px solid #eeeeee;
+    padding: 2rem;
+    border-radius : 0rem 0rem 2rem 2rem;
+}
+.booking_page_form_item_about_content--title {
+    font-size : 2rem;
+    font-weight : 500;  
+    font-family: "Be Vietnam Pro 2022", sans-serif;  
+    color : #45403F;
+}
+.booking_page_form_item_about_content--badge {
+    font-size : 1.4rem;
+    font-weight : 700;  
+    font-family: "Be Vietnam Pro 2022", sans-serif;  
+    color : #F16B55;
+    background-color : #FFE1DC;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    display: inline-block;
+}
+.booking_page_form_item_about_content--text {
+    font-size : 1.6rem;
+    font-weight : 400;  
+    font-family: "Be Vietnam Pro 2022", sans-serif;  
+    color : #45403F;
+    margin-top : 2rem;
+}
+.booking_page_form_item_about_content--input {
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    width: 100%;
+    font-family: "Be Vietnam Pro 2022", sans-serif;
+    border-radius: 1rem;
+    border: 1px solid #eee;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.booking_page_form_item_about_content--input:focus {
+    border: 1px solid var(--main-color); /* Thay đổi màu viền khi focus */
+    outline: none; /* Loại bỏ đường viền mặc định */
+}
+.booking_page_form_item_about_content--btn {
+    font-size : 2rem;
+    font-weight : 400;  
+    font-family: "Be Vietnam Pro 2022", sans-serif;  
+    color : #ffffff;
+    width : 100%;
+    padding : 1rem;
+    border : 1px solid transparent;
+    border-radius : 1.5rem;
+    margin-top : 2rem;
+    background-color : #F16B55;
+    transition: all 0.2s linear;
+}
+.booking_page_form_item_about_content--btn:hover {
+    background-color : #fff;
+    color : var(--main-color);
+    border : 1px solid var(--main-color);
+}
+/* // */
+.date {
+    font-size: 0.75rem;
+    font-weight: 400;
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #FFE1DC;
+    border: 1px solid #ECEFF1;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+}
+
+input {
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    border: none;
+    border-radius: 0.25rem;
+    border: 1px solid transparent;
+    line-height: 1.5rem;
+    padding: 0;
+    font-size: 1rem;
+    color: #FFE1DC;
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+input:focus {
+    outline: none;
+}
+
+#ui-datepicker-div {
+    display: none;
+    background-color: #fff;
+    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
+    margin-top: 0.25rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.ui-datepicker-calendar thead th {
+    padding: 0.25rem 0;
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: #FFE1DC;
+}
+
+.ui-datepicker-calendar tbody td {
+    width: 2.5rem;
+    text-align: center;
+    padding: 0;
+}
+
+.ui-datepicker-calendar tbody td a {
+    display: block;
+    border-radius: 0.25rem;
+    line-height: 2rem;
+    transition: 0.3s all;
+    color: #FFE1DC;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.ui-datepicker-calendar tbody td a:hover {
+    background-color: #FFE1DC;
+}
+
+.ui-datepicker-calendar tbody td a.ui-state-active {
+    background-color: #F16B55;
+    color: white;
+}
+
+.ui-datepicker-header a.ui-corner-all {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    width: 2rem;
+    height: 2rem;
+    margin: 0.5rem;
+    border-radius: 0.25rem;
+    transition: 0.3s all;
+}
+
+.ui-datepicker-header a.ui-corner-all:hover {
+    background-color: #FFE1DC;
+}
+
+.ui-datepicker-header a.ui-datepicker-prev {
+    left: 0;
+    background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMyIgaGVpZ2h0PSIxMyIgdmlld0JveD0iMCAwIDEzIDEzIj48cGF0aCBmaWxsPSIjNDI0NzcwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03LjI4OCA2LjI5NkwzLjIwMiAyLjIxYS43MS43MSAwIDAgMSAuMDA3LS45OTljLjI4LS4yOC43MjUtLjI4Ljk5OS0uMDA3TDguODAzIDUuOGEuNjk1LjY5NSAwIDAgMSAuMjAyLjQ5Ni42OTUuNjk1IDAgMCAxLS4yMDIuNDk3bC00LjU5NSA0LjU5NWEuNzA0LjcwNCAwIDAgMS0xLS4wMDcuNzEuNzEgMCAwIDEtLjAwNi0uOTk5bDQuMDg2LTQuMDg2eiIvPjwvc3ZnPg==");
+    background-repeat: no-repeat;
+    background-size: 0.5rem;
+    background-position: 50%;
+    transform: rotate(180deg);
+}
+
+.ui-datepicker-header a.ui-datepicker-next {
+    right: 0;
+    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMyIgaGVpZ2h0PSIxMyIgdmlld0JveD0iMCAwIDEzIDEzIj48cGF0aCBmaWxsPSIjNDI0NzcwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03LjI4OCA2LjI5NkwzLjIwMiAyLjIxYS43MS43MSAwIDAgMSAuMDA3LS45OTljLjI4LS4yOC43MjUtLjI4Ljk5OS0uMDA3TDguODAzIDUuOGEuNjk1LjY5NSAwIDAgMSAuMjAyLjQ5Ni42OTUuNjk1IDAgMCAxLS4yMDIuNDk3bC00LjU5NSA0LjU5NWEuNzA0LjcwNCAwIDAgMS0xLS4wMDcuNzEuNzEgMCAwIDEtLjAwNi0uOTk5bDQuMDg2LTQuMDg2eiIvPjwvc3ZnPg==');
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position: 50%;
+}
+
+.ui-datepicker-header a > span {
+    display: none;
+}
+
+.ui-datepicker-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    line-height: 2rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    padding: 5px;
+}
+
+.ui-datepicker-week-col {
+    color: #FFE1DC;
+    font-weight: 400;
+    font-size: 0.75rem;
+}
+
+.list-email {
+    margin: 0px;
+}
+
+.list-email-group {
+    background: #fff;
+    border: 10px;
+    display: none;
+    max-height: 200px;
+    overflow-y: auto;
+    margin: 10px 0px;
+}
+
+.list-email-group::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+.list-email-group::-webkit-scrollbar-track {
+    background-color: #fafafa;
+}
+
+/* Handle */
+.list-email-group::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(-45deg, #f8f9fe, #ccc);
+    border-radius: 50px;
+}
+
+.list-email-group ul {
+    padding: 0;
+}
+
+.list-email-group ul li {
+    cursor: pointer;
+    list-style: none;
+    font-size: 14px;
+    padding: 5px 10px;
+    color: #6a6666;
+    border-bottom: 1px solid #fff;
+
+}
+
+.list-email-group ul li:hover {
+    background: #f8f9fe;
+}
+
+/* Tùy chỉnh giao diện của datepicker */
+.ui-datepicker {
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #fff;
+}
+
+/* Tùy chỉnh tiêu đề của datepicker (tháng, năm) */
+.ui-datepicker-header {
+    border-bottom: 1px solid #ddd;
+    /*padding: 5px;*/
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+}
+
+/* Tùy chỉnh các nút điều hướng (trước, sau) */
+.ui-datepicker-prev, .ui-datepicker-next {
+    background-color: #007bff;
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+}
+
+/* Tùy chỉnh các nút chọn tháng và năm */
+.ui-datepicker-calendar .ui-datepicker-prev,
+.ui-datepicker-calendar .ui-datepicker-next {
+    background-color: #007bff;
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+}
+
+/* Tùy chỉnh dropdown chọn tháng và năm */
+.ui-datepicker-month, .ui-datepicker-year {
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 15px;
+    box-shadow: 0px 1px 2px 2px #fafafa;
+    border: none;
+}
+
+/* Tùy chỉnh các ngày trong calendar */
+.ui-datepicker-calendar td a {
+    color: #007bff;
+}
+
+/* Tùy chỉnh ngày được chọn */
+.ui-datepicker-calendar .ui-state-active {
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+}
+
+.ui-datepicker-today {
+    background-color: #FFE1DC; /* Màu xanh nhạt cho ngày hiện tại */
+    border-radius: 10px;
+}
+
+.ui-datepicker-prev-day {
+    background-color: #fdd; /* Màu đỏ nhạt cho các ngày trước đó */
+}
+
+.ui-datepicker-calendar tbody td {
+    color: #eee;
+}
+
+.tbody, td, tfoot, th, thead, tr {
+    font-weight: bold !important;
+    color: #000;
+}
+
+option {
+    cursor: pointer;
+}
+
+
+
+.select2-results__options::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+.select2-results__options::-webkit-scrollbar-track {
+    background-color: #fafafa;
+}
+
+/* Handle */
+.select2-results__options::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(-45deg, #ccc, #eee);
+    border-radius: 50px;
+}
+     .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+    background-color: #5651e1 !important;
+     }
+  .ui-datepicker-month {
+    font-size : 1.4rem;
+    color : #3A3555;
+    font-weight : 500;
+  }
+  .ui-datepicker-year {
+    font-size : 1.4rem;
+    color : #3A3555;
+    font-weight : 500;
+  }
+  .ui-state-default {
+    font-size : 1.4rem;
+    color : #DBD8E8;
+    font-weight : 400;
+    padding: 1rem;
+  }
+  .ui-datepicker-calendar thead th {
+    font-size : 1.4rem;
+    color : #3A3555;
+    font-weight : 500;
+    padding: 1rem;
+  }
+  .ui-datepicker-calendar tbody td a  {
+    font-size : 1.4rem;
+    color : #3A3555;
+    font-weight : 400;
+
+  }
+  .ui-datepicker-calendar {
+    width : 100%;
+  }
+  .datepicker-popup {
+    border: 1px solid #eee;
+    padding : 2rem;
+    border-radius : 2rem;
+  }
+  /* // modal */
+  .booking_page_modal_left {
+        background-color : #F5F5F5;
+  }
+  .booking_page_modal_wrapper {
+    padding :0rem;
+    border-radius : 2rem;
+  }
+  .booking_page_modal_left_item {
+
+    
+  }
+  .booking_page_modal_left_item_header {
+    display : flex; justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom : 1px solid #eee;
+  }
+  .booking_page_modal_left_item--image {
+    width : 100px;
+    height : auto;
+  }
+  .booking_page_modal_left_item--img {
+    width : 100%;
+    height : 100%;
+    border-radius : 50%;
+  }
+  .booking_page_modal_left {
+    border-radius : 1rem 0rem 0rem 1rem;
+    padding : 3rem;
+  }
+  .booking_page_modal_right {
+    border-radius : 0rem 1rem 1rem 0rem;
+    padding : 3rem;
+  }
+  .booking_page_modal_left_item--title {
+    font-size : 3.2rem;
+    font-weight : 700;  
+    font-family: "Be Vietnam Pro 2022", sans-serif;  
+    color : #45403F;
+  }
+  .booking_page_modal_left_item--name {
+    font-size : 2rem;
+    font-weight : 600;  
+    font-family: "Be Vietnam Pro 2022", sans-serif;  
+    color : #45403F;
+  }
+  .booking_page_modal_left_item_content {
+    padding : 2rem 0rem;
+  }
+  .booking_page_modal_left_item_bottom--title {
+    font-size : 1.6rem;
+    font-weight : 500;  
+    font-family: "Be Vietnam Pro 2022", sans-serif;  
+    color : #5F5A59;
+  }
+  .booking_page_modal_left_item_bottom--text {
+    font-size : 1.6rem;
+    font-weight : 500;  
+    font-family: "Be Vietnam Pro 2022", sans-serif;  
+    color : #5F5A59;
+    padding: 1rem;
+    background-color : #FFE1DC;
+    border-radius: 2rem;
+    display: inline-block;
+  }
+  .booking_page_modal_left_item_bottom {
+    padding : 2rem 0rem;
+    border-top : 1px solid #eee;
+  }
+  .booking_page_modal_right_item_header--tab {
+    font-size : 1.4rem;
+    font-weight : 700;  
+    font-family: "Be Vietnam Pro 2022", sans-serif;  
+    color : #45403F;
+    padding: 1rem;
+    margin: 0rem 1rem;
+  }
+  /* .booking_page_modal_right_item_header--tab--warpper  {
+    padding : 2rem;
+    background-color : #F9F2F0; 
+    border-radius : 2rem;
+  } */
+  .booking_page_modal_right_item_header--tab--warpper {
+    display: flex; align-items: center;
+    justify-content : center;
+    padding : 0.5rem;
+    background-color : #fbf3f2; 
+    border-radius : 1rem;
+  }
+  .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+            background-color: #fff;
+            color : #F16B55;
+            border-radius : 1rem;
+  }
+  .booking_page_modal_right_item_content--title {
+    font-size : 1.6rem;
+    font-weight : 600;  
+    font-family: "Be Vietnam Pro 2022", sans-serif;  
+    color : #3A3555;
+  }
+  .booking_page_modal_right_item_content_item--text {
+    font-size : 1.6rem;
+    font-weight : 600;  
+    font-family: "Be Vietnam Pro 2022", sans-serif;  
+    color : #3A3555;
+  }
+  .booking_page_modal_right_item_content_item--number {
+    font-size : 1.6rem;
+    font-weight : 600;  
+    font-family: "Be Vietnam Pro 2022", sans-serif;  
+    color : #F16B55;
+  }
+  .booking_page_modal_right_item_content_item--image {
+    width: 2rem;
+    height : auto;
+  }
+  .booking_page_modal_right_item_content_item--img {
+    width : 100%;
+    height : 100%;
+    cursor: pointer;
+  }
+  .booking_page_modal_right_item_content_list {
+    margin-top : 4rem;
+  }
+  .booking_page_modal_right_item_content_item {
+
+    border-bottom : 1px solid #eee;
+    padding : 1rem 0rem;
+  }
+  .booking_page_modal_right_item_content_item_warpper {
+    margin-top : 2rem;
+  }
+  .nav-link:focus, .nav-link:hover {
+    color : #F16B55;
+  }
+  .booking_page_modal_right_item_content_item--icon {
+    font-size :2rem;
+    font-weight : 600;  
+    cursor: pointer;
+    transition : all 0.2s linear;
+
+  }
+  .booking_page_modal_right_item_content_item--icon:hover {
+    color : #F16B55;
+  }
+
+.booking_page_modal_right_item_content_qr_item----text {
+    font-size : 1.4rem;
+    font-weight : 500;  
+    font-family: "Be Vietnam Pro 2022", sans-serif;  
+    color : #F16B55;
+    margin-bottom : 0rem;
+}
+.booking_page_modal_right_item_content_qr {
+    border : 1px solid #eee;
+    border-radius: 1rem;
+    padding : 1rem;
+}
+.booking_page_modal_right_item_content_qr--image {
+    width : 150px;
+    height : auto;
+}
+.booking_page_modal_right_item_content_qr--img {
+    width : 100%;
+    height : 100%;
+}
+.booking_page_modal_right_item_content_qr_item {
+    border : 1px solid #F16B55;
+    padding : 0.5rem 2rem;
+    border-radius : 1rem;
+}
+.booking_page_modal_right_item_content_btn {
+    font-size : 1.6rem;
+    font-weight : 400;  
+    font-family: "Be Vietnam Pro 2022", sans-serif;  
+    color : #ffffff;
+    background-color : #F16B55;
+    border-radius: 1rem;
+    padding : 1rem;
+    width :100%;
+    display : inline-block;
+    text-align: center;
+    text-decoration : none;
+    transition : all 0.2s linear;
+    border: 1px solid transparent;
+}
+.booking_page_modal_right_item_content_btn:hover {
+    color : var(--main-color);
+    background-color : #ffffff;
+    border: 1px solid var(--main-color);
+}
+.modal-header--mobile {
+    display : none;
+}
+.booking_page_done--title {
+    font-size : 3.2rem;
+    font-weight : 700;  
+    font-family: "Be Vietnam Pro 2022", sans-serif;  
+    color : #45403F;
+} 
+.booking_page_done--text {
+    font-size : 2rem;
+    font-weight : 500;  
+    font-family: "Be Vietnam Pro 2022", sans-serif;  
+    color : #45403F;
+}
+.booking_page_done_list_header--image {
+    width : 100px;
+    height : auto;
+}
+.booking_page_done_list_header--img {
+    width : 100%;
+    height: 100%;
+    border-radius : 50%;
+    object-fit : cover;
+}
+.booking_page_done_list_header--name {
+    font-size : 2rem;
+    font-weight : 600;  
+    font-family: "Be Vietnam Pro 2022", sans-serif;  
+    color : #45403F;
+}
+.booking_page_done_list_content--text {
+    font-size : 1.6rem;
+    font-weight : 500;  
+    font-family: "Be Vietnam Pro 2022", sans-serif;  
+    color : #45403F;
+}
+.booking_page_done_list {
+    border : 1px solid #eee;
+    border-radius: 2rem;
+    padding : 2rem;
+    box-shadow: 0px 0px 20px 7px #13094a14;
+}
+.booking_page_done_list_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+.booking_page_done_list_content {
+    border-top : 1px solid #eee;
+}
+/* // */
+
   @media screen and (max-width: 1600px) { 
     .event_wrapper {
         margin-left : 15rem;
@@ -3386,6 +4070,21 @@ html, body {
   .creator_page_video_scroll {
     margin-bottom: 5rem;
   }
+  .booking_page_form_item_about_content--text--mobile {
+    display : none;
+}
+.booking_page_form_item_about_content--text {
+    margin-top: 3rem;
+}
+.booking_page_modal_wrapper--mobile {
+    padding : 2rem;
+}
+.booking_page_modal_left {
+    padding : 1rem;
+}
+.booking_page_modal_right {
+    padding : 1rem;
+}
 }
 @media screen and (max-width: 768px) { 
  
@@ -3585,7 +4284,9 @@ html, body {
         flex-direction: column;
         padding : 0rem 2rem;
     }
-    
+    .booking_page_modal_left_item--title {
+        font-size : 2.5rem;
+    }
 }
 @keyframes slideLeft {
     to {
@@ -3901,8 +4602,24 @@ html, body {
   }
   .creator_page_content_header  {
     background-color: transparent;
+    padding: 0rem;
   }
    .creator_page_content_video_slide .slick-arrow .slick-arrow {
     
+}
+.booking_page_form {
+    padding :1rem;
+}
+.booking_page_form--title {
+    text-align : center;
+}
+.booking_page_form_list {
+    margin-top : 2rem;
+}
+.modal-header--mobile {
+    display : block;
+}
+.booking_page_done--title {
+    font-size : 2.5rem;
 }
   }
