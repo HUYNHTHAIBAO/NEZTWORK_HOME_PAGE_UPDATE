@@ -125,6 +125,44 @@
             });
         });
 
+        $(document).ready(function () {
+          $(".banner_categories_tags_list").slick({
+              slidesToShow: 2, // Hiển thị 2 cột
+              slidesToScroll: 1,
+              arrows: false,  // Hiển thị nút điều hướng
+              draggable: true,
+              prevArrow: `<button type='button' class='slick-prev slick-arrow'><i class="fa-solid fa-arrow-left icon_slider"></i></button>`,
+              nextArrow: `<button type='button' class='slick-next slick-arrow'><i class="fa-solid fa-arrow-right icon_slider"></i></button>`,
+              dots: false,
+              infinite: true, // Cho phép lặp lại liên tục các slide
+              speed: 3000,
+              centerMode: false,
+              rows: 1, // Hiển thị 2 hàng
+              variableWidth: true,  // Cho phép chiều rộng linh hoạt để che khuất một phần hàng
+              autoplay: true, // Bật tự động chạy
+              autoplaySpeed: 0, // Tốc độ giữa các slide, đặt về 0 để chạy liên tục
+              cssEase: 'linear', // Cách chuyển động mượt
+              responsive: [
+                  {
+                      breakpoint: 1024,
+                      settings: {
+                          slidesToShow: 1, // Trên màn hình nhỏ hiển thị 1 cột
+                          rows: 1, // Hiển thị 1 hàng trên màn hình nhỏ
+                      },
+                  },
+                  {
+                      breakpoint: 480,
+                      settings: {
+                          slidesToShow: 1,
+                          rows: 1, // Hiển thị 1 hàng trên màn hình rất nhỏ
+                          arrows: false, // Ẩn nút điều hướng trên màn hình rất nhỏ
+                      },
+                  },
+              ],
+          });
+      });
+      
+
 
         
 

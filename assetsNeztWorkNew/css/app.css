@@ -774,6 +774,7 @@ html, body {
     background-color : var(--white-color);
     width: 100%;
     outline: 2px solid #D9D9D9; /* Outline mặc định với màu trong suốt */
+    box-shadow: 0px 0px 20px 7px #13094a14;
 }
 .banner_search--input:focus {
     outline: 2px solid var(--main-color); /* Outline khi phần tử được chọn */
@@ -3860,6 +3861,143 @@ option {
     border-top : 1px solid #eee;
 }
 /* // */
+.header_wrapper_categories {
+    background: linear-gradient(to bottom, #FEFFD4BD, #ffffff) !important;
+}
+.banner_categories_tags_list--text {
+    color : #F16B55;
+    background-color : #fff;  
+    font-size : 1.6rem;  
+    font-weight : 500;  
+    font-family: "Be Vietnam Pro 2022", sans-serif;  
+    padding : 1rem 4rem;
+    border-radius : 3rem;
+    border : 1px solid #F16B55;
+    transition: all 0.2s linear;
+    display : inline-block;
+    margin-top : 1.5rem;
+}
+.banner_categories_tags_list--text:hover {
+    background-color : #F16B55;  
+    border : 1px solid #fff;
+    color : #fff;
+}
+.banner_categories_tags_list {
+    margin-top : 5.5rem;
+}
+.categories_page_content_header_top--text {
+    font-size : 4rem;  
+    font-weight : 400;  
+    font-family: "VNM Sans Std", sans-serif;  
+    color : #45403F;
+}
+.categories_page_content_header_content_left--text {
+    font-size : 5rem;  
+    font-weight : 400;  
+    font-family: "VNM Sans Std", sans-serif;  
+    color : #45403F;
+}
+.categories_page_content {
+    margin-top : 12rem;
+}
+.categories_page_content_header_content_bottom {
+    margin-top : 1.5rem;
+}
+.categories_page_content {
+    padding : 0rem
+}
+.categories_page_content_header_content_right--btn {
+    font-size : 1.6rem;
+    font-family: "Be Vietnam Pro 2022", sans-serif;
+    font-weight: 400;
+    color : #B0ABA9;
+    padding: 1rem 2rem;
+    background-color : #ffffff;
+    border-radius: 1.5rem;
+    border: 1px solid #D9D9D9;
+
+}
+.categories_page_content_content_item {
+    margin-top : 3rem;
+}
+.categories_page_content_content_item:hover .categories_page_content_content_item--img {
+    transform: scale(1.1); /* Phóng to ảnh khi hover */
+    transition: transform 0.3s ease-in-out, border-radius 0.3s ease-in-out; /* Hiệu ứng chuyển đổi mượt mà cho cả border-radius */
+    border-radius: 2rem; /* Giữ border-radius tròn hơn khi hover */
+}
+
+.categories_page_content_content_item--image {
+    position: relative;
+    overflow: hidden; /* Ẩn phần ảnh bị phóng to ra ngoài */
+    border-radius: 2rem 2rem 0rem 0rem; /* Áp dụng border-radius cho container */
+}
+
+.categories_page_content_content_item--img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Giữ tỷ lệ ảnh mà không bị méo */
+    border-radius: 2rem 2rem 0rem 0rem; /* Đặt border-radius cho ảnh */
+    transition: transform 0.3s ease-in-out, border-radius 0.3s ease-in-out; /* Hiệu ứng mượt khi hover */
+}
+
+.categories_page_content_content_item--name {
+    font-size : 1.4rem;
+    font-family: "Be Vietnam Pro 2022", sans-serif;
+    font-weight: 600;
+    color : #5F5A59;
+}
+.categories_page_content_content_item--desc {
+    font-size : 1.2rem;
+    font-family: "Be Vietnam Pro 2022", sans-serif;
+    font-weight: 400;
+    color : #5F5A59;
+}
+.categories_page_content_content_item--content {
+    background-color : #fff !important;
+    padding : 2rem;
+    box-shadow: 0px 0px 20px 7px #13094a14;
+    border-radius : 0rem 0rem 2rem 2rem;
+}
+.categories_page_content_content_list {
+    margin-top : 3rem;
+}
+
+.categories_page_content_content_item_badge--text {
+    font-size : 1rem;
+    font-family: "Be Vietnam Pro 2022", sans-serif;
+    font-weight: 600;
+    color : #45403F;
+    padding: 0.5rem;
+    background-color : #fff;
+    border-radius : 1rem;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    border: 1px solid transparent;
+    transition: all 0.2s linear;
+}
+.categories_page_content_content_item_badge--text:hover {
+    border: 1px solid var(--main-color);
+    color : var(--main-color);
+}
+.categories_page_content_content_item--btn {
+    font-size : 2rem;
+    font-family: "Be Vietnam Pro 2022", sans-serif;
+    font-weight: 500;
+    color : #FF6635;
+    padding :0.5rem 4rem;
+    border: 1px solid #FF6635;
+    border-radius : 2rem;
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.2s linear;
+    margin-top : 5.1rem;
+}
+.categories_page_content_content_item--btn:hover {
+    background-color : #FF6635;
+    color: #fff;
+}
+/* // */
 
   @media screen and (max-width: 1600px) { 
     .event_wrapper {
@@ -4084,6 +4222,12 @@ option {
 }
 .booking_page_modal_right {
     padding : 1rem;
+}
+.categories_page_content_header_top--text  {
+    font-size: 3rem;
+}
+.categories_page_content_header_content_left--text {
+    font-size: 4rem;
 }
 }
 @media screen and (max-width: 768px) { 
@@ -4621,5 +4765,18 @@ option {
 }
 .booking_page_done--title {
     font-size : 2.5rem;
+}
+.categories_page_content {
+    margin-top : 6rem;
+}
+.categories_page_content_header_content  {
+    flex-direction : column;
+}
+.banner_categories_tags_list  {
+    margin-top : 2rem;
+}
+.banner_categories_tags_list--text {
+    padding : 1rem 3rem;
+    font-size: 1.4rem;
 }
   }
