@@ -3998,7 +3998,89 @@ option {
     color: #fff;
 }
 /* // */
+/* // CSBM */
+.csbm_page_wrapper {
+    margin-top : 14.8rem;  
+    padding : 0rem 2rem;
+}
+.csbm_page_content_item_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Chia lưới thành 3 cột đều nhau */
+    grid-template-rows: auto; /* Các hàng tự động theo nội dung */  
+    gap: 3rem 2rem; /* Khoảng cách giữa các ô */   
+}
+.csbm_page_content_item {
+    background-color: #eef0f2;
 
+    padding : 2rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    border : 1px solid transparent;
+    transition: all 0.2s linear;
+
+}
+.csbm_page--title {
+    font-size : 7rem;
+    font-weight : 400;
+    font-family: "VNM Sans Std", sans-serif;
+    text-align : center;
+    padding : 0rem 2rem;
+}
+.csbm_page--text {
+    font-size : 2.4rem;
+    font-weight : 400;
+    font-family: "Be Vietnam Pro 2022", sans-serif;
+    color: #45403F;
+    margin-top : 3rem;
+}
+.csbm_page--title--rgba {
+    background: linear-gradient(90deg, #FFBEA9 0%, #FF6635 10%, #FF0E73 99%);
+    -webkit-background-clip: text;
+    background-clip: text; 
+    color: transparent; 
+}
+.csbm_page_content_list {
+    margin-top : 13.8rem;
+}
+.csbm_page_content_list--title {
+    font-size : 5rem;    
+    font-weight : 400;  
+    font-family: "VNM Sans Std", sans-serif;  
+    color: #7C4D42;  
+    margin-bottom: 4rem;
+
+}
+.csbm_page_content_item--image {
+    width: 218px;
+    height: auto;    
+}
+
+.csbm_page_content_item--img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.csbm_page_content_item--text {
+    font-size : 2.4rem;    
+    font-weight : 600;  
+    font-family: "Be Vietnam Pro 2022", sans-serif;  
+    color: #45403F;   
+    margin-top : 3.5rem;
+    transition: all 0.2s linear;
+}
+.csbm_page_content_item:hover {
+    border : 1px solid var(--main-color);
+    background-color : #fff;
+}
+.csbm_page_content_item:hover .csbm_page_content_item--text{
+    color : var(--main-color);
+}
+
+
+/* // */
   @media screen and (max-width: 1600px) { 
     .event_wrapper {
         margin-left : 15rem;
@@ -4050,9 +4132,23 @@ option {
          .creator_page_bg  {
 
          }
-  .creator_page_bg {
-    top: 15% !important;
-  }
+        .creator_page_bg {
+            top: 15% !important;
+        } 
+        /* // 1300 */
+        .csbm_page_content_item--image  {
+            width : 180px;
+        }
+        .csbm_page_content_list {
+            margin-top : 8rem;
+        }
+        .csbm_page--text {
+            font-size: 2rem;
+        }
+        .csbm_page_content_item--text {
+                    font-size: 2rem;
+        }
+        
   }
   @media screen and (max-width: 1200px) {  
     .banner_image_left--img {
@@ -4228,6 +4324,21 @@ option {
 }
 .categories_page_content_header_content_left--text {
     font-size: 4rem;
+}
+.csbm_page_content_item_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Chia lưới thành 3 cột đều nhau */
+    grid-template-rows: auto; /* Các hàng tự động theo nội dung */  
+    gap: 2rem 2rem; /* Khoảng cách giữa các ô */   
+}
+.csbm_page--text {
+    margin-top : 2rem;
+}
+.csbm_page_content_list  {
+    margin-top: 4rem;
+}
+.csbm_page_content_item--text {
+    margin-top : 2rem;
 }
 }
 @media screen and (max-width: 768px) { 
@@ -4430,6 +4541,25 @@ option {
     }
     .booking_page_modal_left_item--title {
         font-size : 2.5rem;
+    }
+    .csbm_page--title {
+        font-size: 4rem;
+    }
+    .csbm_page_wrapper {
+        margin-top : 10rem;
+    }
+    .csbm_page--text {
+        font-size : 1.6rem;
+    }
+    .csbm_page_content_list--title {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+    .csbm_page_content_item--text {
+        font-size : 1.6rem;
+    }
+    .csbm_page_content_item--image {
+        width : 180px;
     }
 }
 @keyframes slideLeft {
@@ -4778,5 +4908,11 @@ option {
 .banner_categories_tags_list--text {
     padding : 1rem 3rem;
     font-size: 1.4rem;
+}
+.csbm_page_content_item_grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Chia lưới thành 3 cột đều nhau */
+    grid-template-rows: auto; /* Các hàng tự động theo nội dung */  
+    gap: 1.5rem; /* Khoảng cách giữa các ô */   
 }
   }
