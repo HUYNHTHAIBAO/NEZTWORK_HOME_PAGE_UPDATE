@@ -92,7 +92,7 @@
                 <div class="categories_page_content_header_content d-flex justify-content-between align-items-center">
                     <div class="categories_page_content_header_content_left">
                         <p class="categories_page_content_header_content_left--text m-0">Dinh dưỡng và thể hình</p>
-                    </div>
+                    </div>  
                     <div class="categories_page_content_header_content_right">
                         <div class="dropdown">
                             <button class="dropdown-toggle categories_page_content_header_content_right--btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -432,16 +432,17 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="./assetsNeztWorkNew/js/app.js"></script>
   <script>
-                window.addEventListener("scroll", function() {
-            var header = document.getElementsByClassName("header");
-            
-  // Kiểm tra xem đã cuộn xuống 300px hay chưa
-            if (window.scrollY > 300) {
-                header.classList.add("scrolled"); // Thêm class khi cuộn qua 300px
-            } else {
-                header.classList.remove("scrolled"); // Bỏ class nếu cuộn lên trên 300px
-            }
-            });
+        
+
+
+            window.onscroll = function() {
+    var header = document.querySelector('.header');
+    if (window.scrollY > 100) {
+      header.style.backgroundColor = "rgba(255, 226, 210, 1)"; // Màu nền mới khi cuộn xuống 300px
+    } else {
+      header.style.backgroundColor = "#feffd430"; // Màu nền gốc
+    }
+  };
 
   </script>
 </body>

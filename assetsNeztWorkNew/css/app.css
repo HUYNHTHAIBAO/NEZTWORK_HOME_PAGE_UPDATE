@@ -679,6 +679,8 @@ html, body {
     z-index: 9;
     background: rgba(255, 226, 210, 1);
     padding: 2rem;
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu trong 0.3 giây */
+
 }
 
 .header_link_line {
@@ -4078,6 +4080,154 @@ option {
 .csbm_page_content_item:hover .csbm_page_content_item--text{
     color : var(--main-color);
 }
+/* // blog page */
+.blog_page {
+    margin-top : 109px;
+}
+
+
+.blog_page_search {
+    position : relative;
+    top : 0%;
+    margin-top: 3.8rem;
+}
+.blog_page_search--input {
+    font-size : 2rem;
+    color : #594949;
+    font-weight : 500;
+    font-family: "Be Vietnam Pro 2022", sans-serif;
+    padding : 1.5rem 5rem 1.5rem 1.5rem;
+    border-radius : 2rem;
+    border : none;
+    background-color : var(--white-color);
+    width: 100%;
+    outline: 2px solid #D9D9D9; /* Outline mặc định với màu trong suốt */
+    box-shadow: 0px 0px 20px 7px #13094a14;
+}
+.blog_page_search--input:focus {
+    outline: 2px solid var(--main-color); /* Outline khi phần tử được chọn */
+    outline-offset: 2px; /* Khoảng cách giữa outline và border của phần tử */
+}
+.blog_page_search--input::placeholder {
+    color : #594949;
+}
+.blog_page_search--icon {
+    font-size : 2rem;
+  
+}
+.blog_page_search--btn {
+    position: absolute;
+    right : 0;
+    top: 0;
+    padding : 0.5rem 2rem;  
+    transform: translate(-15%, 70%);
+    background-color : transparent;
+    border: none;
+}
+.blog_page_list {
+    margin-top : 5rem;
+    padding : 0rem 2rem;
+}
+
+.blog_page_list_left_item_image {
+    width : 100%;
+    /* height : 100%; */
+    overflow: hidden;
+    border-radius : 1rem;
+}
+.blog_page_list_left_item--img {
+    width : 100%;
+    height : 100%;
+    border-radius : 1rem;
+    transition: all 0.2s linear;
+}
+.blog_page_list_left_item:hover .blog_page_list_left_item--img {
+    transform: scale(1.2);
+}
+.blog_page_list_left_item_content_header--name {
+    font-size : 1.4rem;
+    color : var(--main-color);
+    font-weight : 500;
+    font-family: "Be Vietnam Pro 2022", sans-serif;
+}
+
+.blog_page_list_left_item_content_header--icon {
+    font-size : 1.4rem;
+}
+
+.blog_page_list_left_item_content_header--date {
+    font-size : 1.2rem;
+    color : #000000;
+    font-weight : 500;
+    font-family: "Be Vietnam Pro 2022", sans-serif;
+}
+.blog_page_list_left_item_content_header_content--title {
+    font-size : 2rem;
+    color : var(--main-color);
+    font-weight : 600;
+    font-family: "Be Vietnam Pro 2022", sans-serif;
+    line-height: 2.6rem;
+}
+.blog_page_list_left_item_content_header_content--text {
+    font-size : 1.4rem;
+    color : #000000;
+    font-weight : 500;
+    font-family: "Be Vietnam Pro 2022", sans-serif;
+}
+.blog_page_list_left_item_content_header_content--btn {
+    font-size : 1.2rem;
+    color : #000000;
+    font-weight : 500;
+    font-family: "Be Vietnam Pro 2022", sans-serif;
+    padding : 0.5rem 1rem;
+    border : 1px solid var(--main-color);
+    border-radius: 0.5rem;
+    display: inline-block;
+    transition : all 0.2s linear;
+    
+}
+.blog_page_list_left_item_content_header_content--btn:hover {
+    background-color : var(--main-color);
+    color : #fff;
+}
+.page-link {
+    font-size : 1.6rem;
+    color : var(--main-color);
+    font-weight : 500;
+    font-family: "Be Vietnam Pro 2022", sans-serif;
+    margin: 0rem 1rem 0rem 1rem;
+   
+}
+
+.page-link:hover {
+    color : #fff;
+    background-color : var(--main-color);
+}
+.list-group-item {
+    font-size : 1.6rem;  
+    color : var(--main-color);  
+    font-weight : 500;  
+    font-family: "Be Vietnam Pro 2022", sans-serif;  
+    border : 1px solid var(--main-color) !important;
+    border-radius : 0.5rem;
+   transition : all 0.2s linear;
+}
+.list-group-item:hover {
+    background-color : var(--main-color);
+    color : #fff;
+}
+.list-group-item:first-child {
+    border-top-right-radius : 0.5rem !important;
+    border-top-left-radius: 0.5rem !important;
+
+}
+.list-group-item:last-child {
+    border-bottom-right-radius : 0.5rem !important;
+    border-bottom-left-radius: 0.5rem !important;
+
+}
+
+
 
 
 /* // */
@@ -4914,5 +5064,9 @@ option {
     grid-template-columns: 1fr; /* Chia lưới thành 3 cột đều nhau */
     grid-template-rows: auto; /* Các hàng tự động theo nội dung */  
     gap: 1.5rem; /* Khoảng cách giữa các ô */   
+}
+.blog_page_list {
+    display : flex;
+    flex-direction: column-reverse;
 }
   }
