@@ -4467,11 +4467,12 @@ option {
  .about_page_wrapper {
         background-color : #f7f7f7;
         position: relative;
+     
         /* padding : 0rem 2rem; */
  }
  .about_page_banner_bg {
     position: absolute;
-    top : 10%;
+    top : 3%;
      right : 0;
      max-width : 500px;
  }
@@ -4486,6 +4487,7 @@ option {
  }
  .about_page_banner {
     margin-top : 138px;
+    padding : 0rem 2rem;
  }
 
 .about_page_banner_item_content--title {
@@ -4524,6 +4526,7 @@ option {
 }
 .about_page_we {
         margin-top : 138px;
+        padding : 0rem 2rem;
 
 }
 .about_page_we--title {
@@ -4567,12 +4570,188 @@ option {
     font-weight: 400;  
     font-family: "Be Vietnam Pro 2022", sans-serif;  
     margin-top : 3.5rem;
-
-        flex-grow: 1;
-
+    flex-grow: 1;
 }
 .about_page_commit {
     margin-top : 100px;
+    padding : 0rem 2rem;
+}
+.about_page_commit_one--img {
+    max-width: 100%;   
+    height : bold;      
+}
+.about_page_commit_one_content--title {
+    font-size: 5rem;
+    color: #ffffff;  
+    font-weight: 400;  
+    font-family: "VNM Sans Std", sans-serif;  
+}
+.about_page_commit_one_content--text {
+    font-size: 2.4rem;
+    color: #ffffff;  
+    font-weight: 400;  
+    font-family: "VNM Sans Std", sans-serif;  
+}
+.about_page_commit_one {
+    position: relative;
+}
+.about_page_commit_one_content {
+    position: absolute;
+    left : 0;
+    top: 20%;
+    padding : 4rem;
+}
+.about_page_commit_warpper {
+    margin-top : 5.1rem;
+}
+.about_page_commit_warpper_list {
+    margin-top : 2.4rem;
+}
+.about_page_commit_two {
+    position: relative;
+}
+.about_page_commit_three {
+    position: relative;
+}
+.about_page_commit_two_content {
+    position: absolute;
+    left : 0;
+    bottom: 0;
+    padding : 4rem;
+}
+.about_page_commit_three_content {
+    position: absolute;
+    left : 0;
+    bottom: 0;
+    padding : 4rem;
+}
+.about_page_review {
+    margin-top : 10rem;
+    padding : 0rem 2rem;
+}
+
+.about_page_review_list {
+  
+
+  
+
+
+}
+.about_page_review_list_item {
+    box-shadow: 0px 0px 20px 7px #13094a14;
+    border-radius : 1rem;
+    background-color : #fff;
+    padding : 3rem;
+}
+.about_page_review_list__info--image {
+    width: 78px;
+    height: 78px;
+}
+.about_page_review_list__info--img {
+    width : 100%;
+    height : 100%;
+    object-fit: cover;
+}
+.about_page_review_list--name {
+    font-size: 2rem;
+    color: #7C4D42;  
+    font-weight: 600;  
+    font-family: "Be Vietnam Pro 2022", sans-serif;  
+    margin-top : 2rem;
+}
+.about_page_review_list--desc {
+    font-size: 3rem;
+    color: #45403F;  
+    font-weight: 500;  
+    font-family: "Be Vietnam Pro 2022", sans-serif;  
+    margin-bottom : 0px;
+}
+/* .about_page_review_list__info {
+    border-top : 1px solid #B0ABA9;
+} */
+ .about_page_review_list_line {
+    width : 5rem;
+    height : 2px;
+    background-color : #B0ABA9;
+    margin : 4rem 0rem;
+ }
+
+
+ .about_page_job {
+    margin-top : 14.7rem;
+    background-color : #fae1ec;
+
+    border-radius : 4rem;
+
+ }
+ .about_page_job_list {
+    position: relative;
+    padding : 4rem;
+ }
+ .about_page_job_list_bg {
+    position: absolute;
+    top : -28px;
+    left: -40px;
+ }
+ .about_page_job_list--title {
+    font-size: 4.8rem;
+    color: #45403F;   
+    font-weight: 400;   
+    font-family: "VNM Sans Std", sans-serif;  
+ }
+ .about_page_job_list--text {
+    font-size: 3rem;
+    color: #45403F;  
+    font-weight: 500;  
+    font-family: "Be Vietnam Pro 2022", sans-serif;  
+ }
+ .about_page_job_list--link {
+    font-size: 3rem;
+    color: #45403F;  
+    font-weight: 500;  
+    font-family: "Be Vietnam Pro 2022", sans-serif;  
+    
+ }
+ .about_page_slogan {
+    margin-top : 141px;
+
+ 
+ }
+ .about_page_slogan--image {
+    position: relative;
+ 
+ }
+ .about_page_slogan--img {
+    width : 100%;
+    height : :100%;
+ }
+ .about_page_slogan_content--title {
+    font-size: 4.8rem;
+    color: #ffffff;  
+    font-weight: 400;  
+    font-family: "VNM Sans Std", sans-serif;  
+ }
+ .about_page_slogan_content--text {
+    font-size: 2.4rem;
+    color: #ffffff;  
+    font-weight: 400;  
+    font-family: "VNM Sans Std", sans-serif; 
+    margin-top : 5.3rem; 
+ }
+ .about_page_slogan_content {
+    position: absolute;
+    top : 50%;
+    left : 50%;
+    transform: translate(-50%, -50%);
+    padding : 4rem;
+    width : 800px;
+ }
+.about_page_commit--image {
+    width : 100%;
+}
+.about_page_commit--img {
+    width : 100%;
+    height : 100%;
 }
 /* // */
   @media screen and (max-width: 1600px) { 
@@ -4642,7 +4821,73 @@ option {
         .csbm_page_content_item--text {
                     font-size: 2rem;
         }
-        
+        /* // */
+        .about_page_banner_item_content--title {
+            font-size: 5rem;
+        }
+        .about_page_banner_item_content--text {
+            font-size : 1.8rem;
+        }
+        .about_page_banner_bg {
+            max-width : 400px;
+        }
+        .about_page_we--title {
+            font-size : 4rem;
+        }
+        .about_page_we_list_item--title {
+            font-size : 2rem;
+        }
+        .about_page_we_list_item--text  {
+            font-size : 1.8rem;
+        }
+        .about_page_banner_item_content--text_rgba {
+            font-size : 1.8rem;
+        }
+        .about_page_we {
+            margin-top : 80px;
+        }
+        .about_page_commit {
+            margin-top : 80px;
+        }
+        .about_page_commit_one_content--title {
+            font-size : 4rem;
+        }
+        .about_page_commit_one_content--text {
+            font-size : 2rem;
+        }
+        .about_page_commit_one_content--title {
+            font-size : 3rem;
+        }
+        .about_page_commit_one_content--text {
+            font-size : 2rem;
+        }
+        .about_page_review_list--desc {
+            font-size : 2rem;
+        }
+        .about_page_review {
+            margin-top : 8rem;
+        }
+        .about_page_job {
+            margin-top : 8rem;
+        }
+        .about_page_job_list--title {
+            font-size : 3.8rem;
+        }
+        .about_page_job_list--text {
+            font-size : 2rem;
+        }
+        .about_page_job_list--link {
+            font-size : 2rem;
+        }
+        .about_page_slogan {
+            margin-top : 8rem;
+        }
+        .about_page_slogan_content--title {
+            font-size : 3.8rem;
+        }
+        .about_page_slogan_content--text {
+            font-size : 2rem;
+        }
   }
   @media screen and (max-width: 1200px) {  
     .banner_image_left--img {
@@ -4839,6 +5084,25 @@ option {
 }
 .blog_page_list  {
     flex-direction: column-reverse;
+}
+.about_page_job_list_bg {
+    display : none;
+}
+.about_page_banner_bg {
+    display: none;
+}
+.about_page_commit_one_content  {
+    top : 0;
+}
+.about_page_slogan_content  {
+    /* width : 600px; */
+}
+.about_page_slogan_content--text {
+    font-size: 2rem;
+    margin-top : 2rem;
+}
+.about_page_we_list_item--text {
+    margin-top : 1rem;
 }
 }
 @media screen and (max-width: 768px) { 
@@ -5419,5 +5683,41 @@ option {
 .blog_page_list {
     display : flex;
     flex-direction: column-reverse;
+}
+.about_page_slogan {
+    display : none;
+}
+.about_page_job_list {
+    padding : 2rem;
+}
+.about_page_review_list_item {
+    padding : 2rem;
+}
+.about_page_commit_one_content  {
+    position: unset;
+}
+.about_page_commit_one_content  {
+    padding : 2rem;
+}
+.about_page_commit_one_content--title {
+    color : #45403F;
+}
+.about_page_commit_one_content--text {
+    color : #45403F;
+}
+.about_page_commit_two_content {
+    position: unset;
+}
+.about_page_commit_three_content {
+    position: unset;
+}
+.about_page_commit_two_content  {
+    padding : 2rem;
+}
+.about_page_commit_three_content {
+    padding : 2rem;
+}
+.about_page_commit_one_content--title {
+    text-align : center;
 }
   }
