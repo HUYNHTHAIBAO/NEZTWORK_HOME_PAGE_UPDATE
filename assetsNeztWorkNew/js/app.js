@@ -266,7 +266,41 @@
             });
           });
           
-
+          $(document).ready(function () {
+            $(".nz_ai_review_list").slick({
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: true,
+              arrows: false,
+              draggable: true,
+              prevArrow: `<button type='button' class='slick-prev slick-arrow'><ion-icon name="arrow-back-outline"></ion-icon></button>`,
+              nextArrow: `<button type='button' class='slick-next slick-arrow'><ion-icon name="arrow-forward-outline"></ion-icon></button>`,
+              dots: true,
+              responsive: [
+                {
+                  breakpoint: 1025,
+                  settings: {
+                    slidesToShow: 1,
+                  },
+                },
+                {
+                  breakpoint: 480,
+                  settings: {
+                    slidesToShow: 1,
+                    arrows: false,
+                    infinite: true,
+                    // speed: 300,
+                    // centerMode: false,
+                    // rows: 1, // Hiển thị 2 hàng
+                    // variableWidth: true,  // Cho phép chiều rộng linh hoạt để che khuất một phần hàng
+                  },
+                },
+              ],
+              // autoplay: true,
+              // autoplaySpeed: 1000,
+            });
+          });
+          
 
           $(document).ready(function () {
             $(".creator_page_content_video_slide").slick({
