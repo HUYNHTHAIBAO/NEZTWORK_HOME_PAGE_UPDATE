@@ -303,6 +303,40 @@
 
 
           $(document).ready(function () {
+            // Kiểm tra độ rộng màn hình khi tải trang
+            if ($(window).width() > 1024) {
+                $(".tools_list").slick({
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    infinite: true,
+                    arrows: true,
+                    draggable: true,
+                    prevArrow: `<button type='button' class='slick-prev slick-arrow'><i class="fa-solid fa-arrow-left icon_slider"></i></button>`,
+                    nextArrow: `<button type='button' class='slick-next slick-arrow'><i class="fa-solid fa-arrow-right icon_slider"></i></button>`,
+                    dots: false,
+                    responsive: [
+                        {
+                            breakpoint: 1025,
+                            settings: {
+                                slidesToShow: 2,
+                            },
+                        },
+                        {
+                            breakpoint: 480,
+                            settings: {
+                                slidesToShow: 2,
+                                arrows: false,
+                                infinite: true,
+                            },
+                        },
+                    ],
+                });
+            }
+        });
+
+
+
+          $(document).ready(function () {
             $(".nz_team_page_review_list").slick({
               slidesToShow: 1,
               slidesToScroll: 1,
