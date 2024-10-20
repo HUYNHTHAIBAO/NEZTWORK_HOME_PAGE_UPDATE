@@ -1,4 +1,4 @@
-           // Lấy đối tượng của header  
+           // Lấy đối tượng của header
            window.addEventListener("load", function () {
             const menu = document.querySelector(".menu");
             const menuBg = document.querySelector(".menu-bg");
@@ -26,8 +26,8 @@
             $(".event_slider").slick({
                 slidesToShow: 2, // Hiển thị 2 cột
                 slidesToScroll: 1,
-                arrows: true,  
-                draggable: true,  
+                arrows: true,
+                draggable: true,
                 prevArrow: `<button type='button' class='slick-prev slick-arrow'><i class="fa-solid fa-arrow-left icon_slider"></i></button>`,
                 nextArrow: `<button type='button' class='slick-next slick-arrow'><i class="fa-solid fa-arrow-right icon_slider"></i></button>`,
                 dots: false,
@@ -37,7 +37,7 @@
                 rows: 1, // Hiển thị 2 hàng
                 variableWidth: true,  // Cho phép chiều rộng linh hoạt để che khuất một phần hàng
                 responsive: [
-             
+
                     {
                         breakpoint: 1024,
                         settings: {
@@ -62,8 +62,8 @@
             $(".creator_slider").slick({
                 slidesToShow: 2, // Hiển thị 2 cột
                 slidesToScroll: 1,
-                arrows: false,  
-                draggable: true,  
+                arrows: false,
+                draggable: true,
                 prevArrow: `<button type='button' class='slick-prev slick-arrow'><i class="fa-solid fa-arrow-left icon_slider"></i></button>`,
                 nextArrow: `<button type='button' class='slick-next slick-arrow'><i class="fa-solid fa-arrow-right icon_slider"></i></button>`,
                 dots: false,
@@ -73,12 +73,12 @@
                 rows: 1, // Hiển thị 2 hàng
                 variableWidth: true,  // Cho phép chiều rộng linh hoạt để che khuất một phần hàng
                 responsive: [
-             
+
                     {
                         breakpoint: 1024,
                         settings: {
                             slidesToShow: 1,
-                   
+
                         },
                     },
                     {
@@ -95,8 +95,8 @@
             $(".topic_list_slider").slick({
                 slidesToShow: 2, // Hiển thị 2 cột
                 slidesToScroll: 1,
-                arrows: false,  
-                draggable: true,  
+                arrows: false,
+                draggable: true,
                 prevArrow: `<button type='button' class='slick-prev slick-arrow'><i class="fa-solid fa-arrow-left icon_slider"></i></button>`,
                 nextArrow: `<button type='button' class='slick-next slick-arrow'><i class="fa-solid fa-arrow-right icon_slider"></i></button>`,
                 dots: false,
@@ -106,12 +106,12 @@
                 rows: 1, // Hiển thị 2 hàng
                 variableWidth: true,  // Cho phép chiều rộng linh hoạt để che khuất một phần hàng
                 responsive: [
-             
+
                     {
                         breakpoint: 1024,
                         settings: {
                             slidesToShow: 1,
-                   
+
                         },
                     },
                     {
@@ -161,10 +161,10 @@
               ],
           });
       });
-      
 
 
-        
+
+
 
         // $(document).ready(function () {
         //     $(".partner_list_top").slick({
@@ -265,7 +265,7 @@
               // autoplaySpeed: 1000,
             });
           });
-          
+
           $(document).ready(function () {
             $(".nz_ai_review_list").slick({
               slidesToShow: 1,
@@ -302,38 +302,39 @@
           });
 
 
-          $(document).ready(function () {
-            // Kiểm tra độ rộng màn hình khi tải trang
-            if ($(window).width() > 1024) {
-                $(".tools_list").slick({
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
-                    infinite: true,
-                    arrows: true,
-                    draggable: true,
-                    prevArrow: `<button type='button' class='slick-prev slick-arrow'><i class="fa-solid fa-arrow-left icon_slider"></i></button>`,
-                    nextArrow: `<button type='button' class='slick-next slick-arrow'><i class="fa-solid fa-arrow-right icon_slider"></i></button>`,
-                    dots: false,
-                    responsive: [
-                        {
-                            breakpoint: 1025,
-                            settings: {
-                                slidesToShow: 2,
-                            },
-                        },
-                        {
-                            breakpoint: 480,
-                            settings: {
-                                slidesToShow: 2,
-                                arrows: false,
-                                infinite: true,
-                            },
-                        },
-                    ],
-                });
-            }
-        });
+           $(document).ready(function () {
+               // Kiểm tra độ rộng màn hình khi tải trang
+               if ($(window).width() > 1024) {
+                   $(".tools_list").slick({
+                       slidesToShow: 2,
+                       slidesToScroll: 1,
+                       infinite: true,
+                       arrows: true,
+                       draggable: true,
+                       prevArrow: `<button type='button' class='slick-prev slick-arrow'><i class="fa-solid fa-arrow-left icon_slider"></i></button>`,
+                       nextArrow: `<button type='button' class='slick-next slick-arrow'><i class="fa-solid fa-arrow-right icon_slider"></i></button>`,
+                       dots: false,
+                       adaptiveHeight: true ,// Tự động điều chỉnh chiều cao cho các slide
 
+                       responsive: [
+                           {
+                               breakpoint: 1025,
+                               settings: {
+                                   slidesToShow: 2,
+                               },
+                           },
+                           {
+                               breakpoint: 480,
+                               settings: {
+                                   slidesToShow: 1,
+                                   arrows: false,
+                                   infinite: true,
+                               },
+                           },
+                       ],
+                   });
+               }
+           });
 
 
           $(document).ready(function () {
@@ -370,15 +371,15 @@
               // autoplaySpeed: 1000,
             });
           });
-          
-          
+
+
 
           $(document).ready(function () {
             $(".creator_page_content_video_slide").slick({
                 slidesToShow: 2, // Hiển thị 2 cột
                 slidesToScroll: 1,
-                arrows: true,  
-                draggable: true,  
+                arrows: true,
+                draggable: true,
                 prevArrow: `<button type='button' class='slick-prev slick-arrow'><i class="fa-solid fa-chevron-left icon_slider_creator"></i></button>`,
                 nextArrow: `<button type='button' class='slick-next slick-arrow'><i class="fa-solid fa-chevron-right icon_slider_creator"></i></button>`,
                 dots: false,
@@ -388,12 +389,12 @@
                 rows: 1, // Hiển thị 2 hàng
                 variableWidth: true,  // Cho phép chiều rộng linh hoạt để che khuất một phần hàng
                 responsive: [
-             
+
                     {
                         breakpoint: 1024,
                         settings: {
                             slidesToShow: 1,
-                   
+
                         },
                     },
                     {
@@ -413,8 +414,8 @@
           $(".creator_page_content_blogs_slide").slick({
               slidesToShow: 2, // Hiển thị 2 cột
               slidesToScroll: 1,
-              arrows: true,  
-              draggable: true,  
+              arrows: true,
+              draggable: true,
               prevArrow: `<button type='button' class='slick-prev slick-arrow'><i class="fa-solid fa-chevron-left icon_slider_creator"></i></button>`,
               nextArrow: `<button type='button' class='slick-next slick-arrow'><i class="fa-solid fa-chevron-right icon_slider_creator"></i></button>`,
               dots: false,
@@ -424,12 +425,12 @@
               rows: 1, // Hiển thị 2 hàng
               variableWidth: true,  // Cho phép chiều rộng linh hoạt để che khuất một phần hàng
               responsive: [
-           
+
                   {
                       breakpoint: 1024,
                       settings: {
                           slidesToShow: 1,
-                 
+
                       },
                   },
                   {
@@ -449,8 +450,8 @@
         $(".creator_page_content_review_slide").slick({
             slidesToShow: 2, // Hiển thị 2 cột
             slidesToScroll: 1,
-            arrows: true,  
-            draggable: true,  
+            arrows: true,
+            draggable: true,
             prevArrow: `<button type='button' class='slick-prev slick-arrow'><i class="fa-solid fa-chevron-left icon_slider_creator"></i></button>`,
             nextArrow: `<button type='button' class='slick-next slick-arrow'><i class="fa-solid fa-chevron-right icon_slider_creator"></i></button>`,
             dots: false,
@@ -460,12 +461,12 @@
             rows: 1, // Hiển thị 2 hàng
             variableWidth: true,  // Cho phép chiều rộng linh hoạt để che khuất một phần hàng
             responsive: [
-         
+
                 {
                     breakpoint: 1024,
                     settings: {
                         slidesToShow: 1,
-               
+
                     },
                 },
                 {
@@ -484,8 +485,8 @@
       $(".creator_page_content_similar_slide").slick({
           slidesToShow: 2, // Hiển thị 2 cột
           slidesToScroll: 1,
-          arrows: true,  
-          draggable: true,  
+          arrows: true,
+          draggable: true,
           prevArrow: `<button type='button' class='slick-prev slick-arrow'><i class="fa-solid fa-chevron-left icon_slider_creator"></i></button>`,
           nextArrow: `<button type='button' class='slick-next slick-arrow'><i class="fa-solid fa-chevron-right icon_slider_creator"></i></button>`,
           dots: false,
@@ -495,12 +496,12 @@
           rows: 1, // Hiển thị 2 hàng
           variableWidth: true,  // Cho phép chiều rộng linh hoạt để che khuất một phần hàng
           responsive: [
-       
+
               {
                   breakpoint: 1024,
                   settings: {
                       slidesToShow: 1,
-             
+
                   },
               },
               {
@@ -520,16 +521,16 @@
         let typingSpeed = 150; // Tốc độ gõ chữ
         let deletingSpeed = 100; // Tốc độ xóa chữ
         let isDeleting = false; // Trạng thái gõ hoặc xóa
-      
+
         function typePlaceholder() {
           let currentText = placeholderText.substring(0, placeholderIndex);
-          
+
           // Thêm dấu nháy nhấp nháy vào cuối văn bản
           currentText = `${currentText}|`;
-      
+
           // Cập nhật nội dung placeholder
           input.setAttribute('placeholder', currentText);
-      
+
           if (!isDeleting && placeholderIndex < placeholderText.length) {
             // Nếu đang gõ và chưa hết chữ
             placeholderIndex++;
@@ -550,7 +551,7 @@
             setTimeout(typePlaceholder, 500);
           }
         }
-      
+
         // Bắt đầu chạy chữ khi trang tải
         window.onload = typePlaceholder;
 
@@ -573,7 +574,7 @@
               showMonthAfterYear: false,
               yearSuffix: ""
           };
-  
+
           $.datepicker.setDefaults($.datepicker.regional["vi-VN"]);
           // Lấy năm hiện tại
           var currentYear = new Date().getFullYear();
@@ -588,10 +589,44 @@
               selectOtherMonths: true,
               showAnim: "fadeIn",
               minDate: new Date(), // Cấm chọn ngày trước ngày hiện tại
-  
-          }).datepicker("show");
-  
-  
-      });
-      
 
+          }).datepicker("show");
+
+
+      });
+// 
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Lấy tất cả các phần tử có class 'chat_list_item'
+  const chat_list_item = document.querySelectorAll('.chat_page_list_item_left_header_chat_list_item');
+  
+  // Lấy phần tử cần mở
+  const chat_page_list_item_center = document.querySelector('.chat_page_list_item_center');
+  const chat_page_list_item_left = document.querySelector('.chat_page_list_item_left');
+  const chat_page_warpper_back  = document.querySelector('.chat_page_warpper_back ');
+// Thêm sự kiện click cho phần tử
+chat_page_warpper_back.addEventListener('click', () => {
+  // Thực hiện hành động bạn muốn khi click vào phần tử
+  // console.log('Clicked on chat_page_warpper_back!');
+  chat_page_list_item_center.style.display = 'none'; // Hoặc 'flex', tùy thuộc vào layout của bạn
+  chat_page_list_item_left.style.display = 'block'; // Hoặc 'flex', tùy thuộc vào layout của bạn
+
+  // Ví dụ: Đóng một chat hoặc ẩn một phần tử
+  // chat_page_warpper_back.style.display = 'none'; // Ẩn phần tử nếu cần
+});  
+  // Duyệt qua từng phần tử trong danh sách và thêm sự kiện click
+  chat_list_item.forEach(item => {
+      item.addEventListener('click', () => {
+
+          // Mở phần tử 'chat_page_list_item_center'
+          // Bạn có thể sử dụng display: none; và display: block; để hiển thị
+          chat_page_list_item_center.style.display = 'block'; // Hoặc 'flex', tùy thuộc vào layout của bạn
+          chat_page_list_item_left.style.display = 'none'; // Hoặc 'flex', tùy thuộc vào layout của bạn
+          
+          // Nếu bạn muốn ẩn các phần tử khác khi mở
+          // chat_page_list_item_center.style.display = 'none'; // Để ẩn
+      });
+  });
+});

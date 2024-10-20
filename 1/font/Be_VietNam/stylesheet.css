@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Be Vietnam Pro 2022';
+    src: url('BeVietnamPro2022-Bold.eot');
+    src: url('BeVietnamPro2022-Bold.eot?#iefix') format('embedded-opentype'),
+        url('BeVietnamPro2022-Bold.woff2') format('woff2'),
+        url('BeVietnamPro2022-Bold.woff') format('woff'),
+        url('BeVietnamPro2022-Bold.ttf') format('truetype'),
+        url('BeVietnamPro2022-Bold.svg#BeVietnamPro2022-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Be Vietnam Pro 2022';
+    src: url('BeVietnamPro2022-Black.eot');
+    src: url('BeVietnamPro2022-Black.eot?#iefix') format('embedded-opentype'),
+        url('BeVietnamPro2022-Black.woff2') format('woff2'),
+        url('BeVietnamPro2022-Black.woff') format('woff'),
+        url('BeVietnamPro2022-Black.ttf') format('truetype'),
+        url('BeVietnamPro2022-Black.svg#BeVietnamPro2022-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Be Vietnam Pro 2022';
+    src: url('BeVietnamPro2022-ExtraBold.eot');
+    src: url('BeVietnamPro2022-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('BeVietnamPro2022-ExtraBold.woff2') format('woff2'),
+        url('BeVietnamPro2022-ExtraBold.woff') format('woff'),
+        url('BeVietnamPro2022-ExtraBold.ttf') format('truetype'),
+        url('BeVietnamPro2022-ExtraBold.svg#BeVietnamPro2022-ExtraBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Be Vietnam Pro 2022';
+    src: url('BeVietnamPro2022-Regular.eot');
+    src: url('BeVietnamPro2022-Regular.eot?#iefix') format('embedded-opentype'),
+        url('BeVietnamPro2022-Regular.woff2') format('woff2'),
+        url('BeVietnamPro2022-Regular.woff') format('woff'),
+        url('BeVietnamPro2022-Regular.ttf') format('truetype'),
+        url('BeVietnamPro2022-Regular.svg#BeVietnamPro2022-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Be Vietnam Pro 2022';
+    src: url('BeVietnamPro2022-Medium.eot');
+    src: url('BeVietnamPro2022-Medium.eot?#iefix') format('embedded-opentype'),
+        url('BeVietnamPro2022-Medium.woff2') format('woff2'),
+        url('BeVietnamPro2022-Medium.woff') format('woff'),
+        url('BeVietnamPro2022-Medium.ttf') format('truetype'),
+        url('BeVietnamPro2022-Medium.svg#BeVietnamPro2022-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Be Vietnam Pro 2022';
+    src: url('BeVietnamPro2022-SemiBold.eot');
+    src: url('BeVietnamPro2022-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('BeVietnamPro2022-SemiBold.woff2') format('woff2'),
+        url('BeVietnamPro2022-SemiBold.woff') format('woff'),
+        url('BeVietnamPro2022-SemiBold.ttf') format('truetype'),
+        url('BeVietnamPro2022-SemiBold.svg#BeVietnamPro2022-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
