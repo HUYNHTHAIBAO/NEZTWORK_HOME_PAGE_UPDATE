@@ -636,6 +636,11 @@ chat_page_warpper_back.addEventListener('click', () => {
      addClickEvent();
  }
 
+
+
+
+
+ 
  // Lắng nghe sự thay đổi kích thước màn hình
  mediaQuery.addEventListener('change', event => {
      if (event.matches) {
