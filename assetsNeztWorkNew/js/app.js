@@ -617,16 +617,29 @@ chat_page_warpper_back.addEventListener('click', () => {
   // chat_page_warpper_back.style.display = 'none'; // Ẩn phần tử nếu cần
 });  
   // Duyệt qua từng phần tử trong danh sách và thêm sự kiện click
-  chat_list_item.forEach(item => {
-      item.addEventListener('click', () => {
+ // Kiểm tra xem màn hình có nhỏ hơn hoặc bằng 480px không
+ const mediaQuery = window.matchMedia('(max-width: 480px)');
 
-          // Mở phần tử 'chat_page_list_item_center'
-          // Bạn có thể sử dụng display: none; và display: block; để hiển thị
-          chat_page_list_item_center.style.display = 'block'; // Hoặc 'flex', tùy thuộc vào layout của bạn
-          chat_page_list_item_left.style.display = 'none'; // Hoặc 'flex', tùy thuộc vào layout của bạn
-          
-          // Nếu bạn muốn ẩn các phần tử khác khi mở
-          // chat_page_list_item_center.style.display = 'none'; // Để ẩn
-      });
-  });
+ // Hàm để thêm sự kiện click
+ const addClickEvent = () => {
+     chat_list_item.forEach(item => {
+         item.addEventListener('click', () => {
+             // Mở phần tử 'chat_page_list_item_center'
+             chat_page_list_item_center.style.display = 'block'; // Hoặc 'flex', tùy thuộc vào layout của bạn
+             chat_page_list_item_left.style.display = 'none'; // Ẩn phần tử trái nếu cần
+         });
+     });
+ };
+
+ // Kiểm tra và thêm sự kiện nếu màn hình nhỏ hơn hoặc bằng 480px
+ if (mediaQuery.matches) {
+     addClickEvent();
+ }
+
+ // Lắng nghe sự thay đổi kích thước màn hình
+ mediaQuery.addEventListener('change', event => {
+     if (event.matches) {
+         addClickEvent(); // Thêm sự kiện khi màn hình nhỏ hơn hoặc bằng 480px
+     }
+ });
 });
